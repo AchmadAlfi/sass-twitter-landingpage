@@ -8,46 +8,75 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <div class="showcase-1">
-      <i class="fab fa-twitter"></i>
-      <div class="showcase-1-content">
+    <div class="showcase">
+      <div class="showcase-1">
+        <div class="showcase-1-content">
+          <ul>
+            <li>
+              <i class="fas fa-search"></i> <span>Follow your interests.</span>
+            </li>
+            <li>
+              <i class="fas fa-user-friends"></i>
+              <span>Hear what people are talking about.</span>
+            </li>
+            <li>
+              <i class="far fa-comment"></i> <span>Join the conversation.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="showcase-2">
+        <div class="user-form">
+          <form>
+            <div class="input-box">
+              <label for="uname">Phone, email, or username</label>
+              <input type="text" id="uname" />
+            </div>
+            <div class="input-box">
+              <label for="pw">Password</label>
+              <input type="text" id="pw" />
+            </div>
+            <button type="submit">Log In</button>
+          </form>
+          <div class="forget-me"><a href="#">Forgot password?</a></div>
+        </div>
+        <div class="showcase-2-content">
+          <i class="fab fa-twitter"></i>
+          <h1>See what’s happening in the world right now</h1>
+          <h3>Join Twitter today.</h3>
+          <button class="signup">Sign Up</button>
+          <button class="login">Log In</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="features">
         <ul>
-          <li>
-            <i class="fas fa-search"></i> <span>Follow your interests.</span>
-          </li>
-          <li>
-            <i class="fas fa-user-friends"></i>
-            <span>Hear what people are talking about.</span>
-          </li>
-          <li><i class="far fa-comment"></i> Join the conversation.</li>
+          <li>About</li>
+          <li>Help</li>
+          <li>Center</li>
+          <li>Terms</li>
+          <li>Privacy</li>
+          <li>policy</li>
+          <li>Cookies</li>
+          <li>Ads</li>
+          <li>info</li>
+          <li>Blog</li>
+          <li>Status</li>
+          <li>Jobs</li>
+          <li>Brand</li>
+          <li>Advertise</li>
+          <li>Marketing</li>
+          <li>Businesses</li>
+          <li>Developers</li>
+          <li>Directory</li>
+          ;<i>Settings</i>
         </ul>
       </div>
-    </div>
-    <div class="showcase-2">
-      <div class="user-form">
-        <form>
-          <div class="input-box">
-            <label for="uname">Phone, email, or username</label>
-            <input type="text" id="uname" />
-          </div>
-          <div class="input-box">
-            <label for="pw">Password</label>
-            <input type="text" id="pw" />
-          </div>
-          <button type="submit">Log In</button>
-        </form>
-        <div class="forget-me"><a href="#">Forgot password?</a></div>
-      </div>
-      <div class="showcase-2-content">
-        <i class="fab fa-twitter"></i>
-        <h1>See what’s happening in the world right now</h1>
-        <h3>Join Twitter today.</h3>
-        <button class="signup">Sign Up</button>
-        <button class="login">Log In</button>
-      </div>
-    </div>
+      <div class="copyright">&copy; 2020 Twitter, Inc.</div>
+    </footer>
   </body>
 </html>
