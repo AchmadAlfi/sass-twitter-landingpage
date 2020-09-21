@@ -147,4 +147,34 @@ body {
   }
 }
 
+footer {
+  margin: 0.8rem 12.2rem;
+  display: flex;
+  .features {
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      li {
+        a {
+          text-decoration: none;
+          font-size: 0.8rem;
+          margin-right: 1rem;
+          color: grey;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    margin-top: 0.3rem;
+    p {
+      font-size: 0.8rem;
+      color: grey;
+    }
+  }
+}
+
 @import "mobile";
