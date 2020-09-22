@@ -17,3 +17,28 @@ $grey-color: #778794;
   font-weight: 700;
   cursor: pointer;
 }
+
+// * Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 798px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 798px) and (max-width: 998px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1174px) {
+    @content;
+  }
+}

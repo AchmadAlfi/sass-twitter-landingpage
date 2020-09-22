@@ -13,57 +13,62 @@ body {
 }
 
 .showcase {
+  height: 95vh;
   display: flex;
-  height: 44rem;
   &-1 {
-    width: 50%;
+    flex: 50%;
     background: #71c9f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &-content {
-      padding: 16rem 10rem;
+      width: 24rem;
       ul {
         background: $base-color;
         list-style-type: none;
-        padding: 1rem;
+        padding: 1rem 0;
         li {
           display: flex;
-          margin-bottom: 2rem;
+          padding: 1rem;
           i.fas,
           i.far {
-            font-size: 2rem;
+            flex: 12%;
+            font-size: 1.9rem;
             color: #fff;
-            margin-right: 1rem;
-          }
-          i.fas.fa-user-friends {
-            margin-right: 0.5rem;
           }
           span {
+            flex: 88%;
             color: #fff;
             font-weight: 700;
-            font-size: 1.2rem;
-            padding: 0.1rem;
+            font-size: 1.1rem;
           }
         }
       }
     }
   }
   &-2 {
-    width: 50%;
+    flex: 50%;
     background: #fff;
+    display: flex;
+    flex-direction: column;
 
     .user-form {
-      margin-left: 7.3rem;
-      margin-top: 1rem;
+      flex: 23%;
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      margin: 1rem auto;
       form {
         display: flex;
-        height: auto;
+        justify-content: center;
         .input-box {
-          width: 13rem;
+          flex: 40%;
           background: $inputbox-color;
-          margin-right: 1rem;
-          padding: 0.1rem 0.65rem;
           border-bottom: 2px solid $grey-color;
           border-radius: 3px;
+          margin-right: 1rem;
+          padding: 0.5rem;
 
           label {
             font-size: 0.95rem;
@@ -74,7 +79,6 @@ body {
             background: transparent;
             border: 1px solid $inputbox-color;
             font-size: 1.1rem;
-            padding: 0.25rem;
             width: 100%;
             &:focus {
               outline: none;
@@ -82,14 +86,14 @@ body {
           }
         }
         button {
+          flex: 20%;
+          margin: 0.7rem 1rem;
           background: #fff;
           color: $base-color;
           font-size: 1rem;
           font-weight: bold;
-          padding: 0.3rem 1rem;
           border: 1px solid $base-color;
           border-radius: 25px;
-          margin: 0.5rem;
           cursor: pointer;
           &:hover {
             background: darken(#fff, 3%);
@@ -98,9 +102,13 @@ body {
         }
       }
       .forget-me {
-        margin-top: 0.3rem;
-        margin-left: 14.5rem;
+        display: flex;
+        span {
+          flex: 40%;
+        }
         a {
+          flex: 40%;
+          margin-top: 0.5rem;
           text-decoration: none;
           font-size: 0.8rem;
           color: $base-color;
@@ -108,21 +116,27 @@ body {
             text-decoration: underline;
           }
         }
+        p {
+          flex: 20%;
+        }
       }
     }
 
     &-content {
-      margin: 5.4rem 12rem;
+      flex: 77%;
+      width: 25rem;
+      margin: auto;
+
       i {
         font-size: 2.4rem;
         color: $base-color;
+        margin-bottom: 1rem;
       }
       h1 {
-        margin-top: 1rem;
+        margin-bottom: 3rem;
       }
-      h4 {
-        margin-top: 3.5rem;
-      }
+      // h4 {
+      // }
       .signup {
         @extend %btn;
         background: $base-color;
@@ -145,35 +159,43 @@ body {
       }
     }
   }
+  .btn-ext {
+    display: none;
+  }
 }
 
 footer {
-  margin: 0.8rem 12.2rem;
-  display: flex;
   .features {
     ul {
-      display: flex;
-      flex-direction: row;
+      width: 100%;
       list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
       li {
+        margin-top: 0.5rem;
+        margin-right: 1rem;
         a {
           text-decoration: none;
           font-size: 0.8rem;
-          margin-right: 1rem;
           color: grey;
           &:hover {
             text-decoration: underline;
           }
         }
+        p {
+          padding-top: 0.3rem;
+          font-size: 0.8rem;
+          color: grey;
+        }
       }
     }
   }
-  .copyright {
-    margin-top: 0.3rem;
-    p {
-      font-size: 0.8rem;
-      color: grey;
-    }
+}
+@media (max-width: 1119px) {
+  .showcase {
+    height: 91vh;
   }
 }
 
